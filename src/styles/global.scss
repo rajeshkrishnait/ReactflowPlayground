@@ -1,0 +1,13 @@
+// global.scss
+@import 'variables';
+@import 'mixins';
+@import 'reset';
+
+body {
+  font-family: $font-family;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+}
+
+

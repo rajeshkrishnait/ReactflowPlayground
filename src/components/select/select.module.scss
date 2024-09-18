@@ -1,0 +1,7 @@
+@import '../../styles/mixins';
+
+select.default{
+    @include custom-border;
+    @include custom-labels;
+    padding-left:5px;
+}

@@ -1,0 +1,9 @@
+@import '../../styles/mixins';
+
+.toolbar{
+    max-width: 1080px;
+    margin: 30px auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    @include flexCenter
+}

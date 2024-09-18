@@ -1,0 +1,7 @@
+@import '../../styles/mixins';
+
+button.default{
+    @include flexCenter;
+    @include custom-border;
+    margin: 0 auto;
+}

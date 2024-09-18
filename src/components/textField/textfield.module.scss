@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+
+// Default styling for the text field container
+.default-textfield {
+    @include custom-border;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+// Styling for the editable input to make it expand
+.custom-input {
+    min-height: 40px; // Minimum height for the textarea
+    max-height: 300px; // Maximum height to avoid growing too large
+    width: 100%; // Full width of the container
+    resize: none; // Disable manual resizing
+    overflow: hidden; // Hide scrollbars
+    box-sizing: border-box; // Include padding and border in height calculation
+    transition: height 0.2s ease; // Smooth height transition
+    line-height: 1.5; // Line height for better readability
+    padding: 5px; // Padding inside the textarea
+    font-family: inherit; // Ensure font consistency with parent
+    font-size: inherit; // Inherit font size from parent
+}
+
+// Styling for the textarea when it is focused
+.custom-input:focus {
+    box-shadow: none !important;
+    outline: none; // Remove default focus outline
+}
+
+// Apply styles to the editable container to ensure proper resizing
+.default-textfield .chakra-editable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

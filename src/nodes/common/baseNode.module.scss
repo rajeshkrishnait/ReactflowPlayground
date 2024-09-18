@@ -1,0 +1,28 @@
+@import '../../styles/mixins';
+
+.node-root{
+    width: 200px;
+    height: auto;
+    border: 2px solid #cecffc;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    line-height: 1.66;
+    font-size: 10px;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+
+.node-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.node-title > div{
+    @include flexCenter;
+    gap: 10px;
+}
+.node-title img{
+    @include custom-size(10px, 10px)
+}

@@ -1,0 +1,28 @@
+// mixins.scss
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin custom-border($color: #cecffc, $radius: 5px) {
+  border: 1px solid $color;
+  border-radius: $radius;
+}
+
+// Define a mixin for height and width
+@mixin custom-size($height: 20px, $width: 20px) {
+  height: $height;
+  width: $width;
+}
+@mixin custom-labels($fw: 500, $lh: 1.66, $fs: 10px){
+  font-weight: $fw;
+  line-height:$lh;
+  font-size: $fs;
+}
+
+@mixin responsive($breakpoint) {
+@media (max-width: $breakpoint) {
+    @content;
+}
+}

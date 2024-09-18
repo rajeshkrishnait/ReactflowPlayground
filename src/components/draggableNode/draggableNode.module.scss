@@ -1,0 +1,20 @@
+@import '../../styles/mixins';
+
+.node{
+    cursor: grab;
+    @include flexCenter;
+    min-width: 80px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: transparent;
+    flex-direction: column;
+}
+
+.node > span{
+    margin: 4px 0px -2px;
+    @include custom-labels;
+    text-align: center;
+}
+.node > img{
+    @include custom-size
+}

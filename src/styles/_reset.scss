@@ -1,0 +1,37 @@
+
+/* Remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Standardize font settings */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Remove default list styles */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Normalize table styling */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Remove text decoration from links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Style buttons consistently */
+  button {
+    border: none;
+    background: none;
+    font: inherit;
+  }
