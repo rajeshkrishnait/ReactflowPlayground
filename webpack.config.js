@@ -2,6 +2,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { DefinePlugin } = require('webpack');
+const { InjectManifest } = require('workbox-webpack-plugin');
+const { GenerateSW } = require('workbox-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js', // Entry point for your application
@@ -68,6 +70,10 @@ module.exports = {
     }),
     new DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    }),
+    new InjectManifest({
+      swSrc: './src/service-worker.js', // Path to your custom service worker file
+      swDest: 'build/service-worker.js', // Output file
     }),
   ],
   devServer: {
