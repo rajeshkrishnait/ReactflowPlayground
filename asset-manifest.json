@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/ReactflowPlayground/static/css/main.dd73dd87.css",
-    "main.js": "/ReactflowPlayground/static/js/main.413c9e0f.js",
+    "main.js": "/ReactflowPlayground/static/js/main.a4b55bba.js",
+    "service-worker.js": "/ReactflowPlayground/service-worker.js",
     "static/media/merge.svg": "/ReactflowPlayground/static/media/merge.de5f45b7131bae142ddb8fbc9bcec347.svg",
     "static/media/log.svg": "/ReactflowPlayground/static/media/log.5a8811706b25f93b16d57e9e1b14020b.svg",
     "static/media/action.svg": "/ReactflowPlayground/static/media/action.114783df95ac981613e548d79304b2d3.svg",
@@ -13,10 +14,10 @@
     "static/media/input.svg": "/ReactflowPlayground/static/media/input.e97ae54755f9547fab448f00aaa6dc4b.svg",
     "static/media/text.svg": "/ReactflowPlayground/static/media/text.4785e8013bd0df260f44ef0da023bf92.svg",
     "main.dd73dd87.css.map": "/ReactflowPlayground/static/css/main.dd73dd87.css.map",
-    "main.413c9e0f.js.map": "/ReactflowPlayground/static/js/main.413c9e0f.js.map"
+    "main.a4b55bba.js.map": "/ReactflowPlayground/static/js/main.a4b55bba.js.map"
   },
   "entrypoints": [
     "static/css/main.dd73dd87.css",
-    "static/js/main.413c9e0f.js"
+    "static/js/main.a4b55bba.js"
   ]
 }
